@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ضيف المنتجاتك في الموقع</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"], input[type="file"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ضيف المنتجاتك في الموقع</h1>
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="productName" placeholder="اسم المنتج" required />
+        <input type="file" name="productImage" accept="image/*" required />
+        <button type="submit">إضافة المنتج</button>
+    </form>
+
+</body>
+</html>
